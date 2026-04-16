@@ -34,7 +34,7 @@ export default function Solution() {
             La solución
           </span>
           <h2 className="mt-4 text-4xl sm:text-5xl font-bold text-gray-900">
-            Flokk: inteligencia artificial para el campo real
+            Floq: inteligencia artificial para el campo real
           </h2>
           <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
             Tres pilares tecnológicos que transforman cómo se maneja el ganado en Latinoamérica — accesibles desde cualquier smartphone.

@@ -77,7 +77,7 @@ export default function WaitlistForm() {
       }
     } catch {
       setState("error");
-      setError("Hubo un problema al enviar. Inténtalo de nuevo o escríbenos a hola@flokk.ai");
+      setError("Hubo un problema al enviar. Inténtalo de nuevo o escríbenos a hola@floq.cl");
     }
   };
 
@@ -192,7 +192,7 @@ export default function WaitlistForm() {
       </button>
 
       <p className="text-center text-xs text-gray-400">
-        Sin spam. Solo actualizaciones de Flokk. Cancela cuando quieras.
+        Sin spam. Solo actualizaciones de Floq. Cancela cuando quieras.
       </p>
     </form>
   );

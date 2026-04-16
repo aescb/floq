@@ -4,7 +4,7 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <span className="text-2xl">🌿</span>
-          <span className="font-bold text-xl text-gray-900 tracking-tight">Flokk</span>
+          <span className="font-bold text-xl text-gray-900 tracking-tight">Floq</span>
         </div>
         <a
           href="#waitlist"

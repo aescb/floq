@@ -8,11 +8,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Flokk — Ganadería inteligente para Latinoamérica",
+  title: "Floq — Ganadería inteligente para Latinoamérica",
   description:
     "Cercado virtual y monitoreo de bienestar animal con IA. La próxima generación del manejo ganadero en Chile y Latinoamérica.",
   openGraph: {
-    title: "Flokk — Ganadería inteligente para Latinoamérica",
+    title: "Floq — Ganadería inteligente para Latinoamérica",
     description:
       "Cercado virtual y monitoreo de bienestar animal con IA. La próxima generación del manejo ganadero en Chile y Latinoamérica.",
     type: "website",
