@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 24px; background: var(--floq-chalk); font-family: var(--font-body); display:flex; flex-direction:column; gap: 14px; }
+  .group-label { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--floq-slate); margin-bottom: 8px; }
+  .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .badge { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 9999px; font-size: 11px; font-weight: 600; font-family: var(--font-body); letter-spacing: 0.02em; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; }
+  .b-sano { background: var(--floq-mist); color: var(--floq-grass); }
+  .b-aviso { background: #FEF3DC; color: #9E4E00; }
+  .b-critico { background: #FAE5E5; color: #8A2929; }
+  .b-inactivo { background: #EEF0EE; color: #4A5E53; }
+  .b-celo { background: #DEF0FC; color: #155F94; }
+  .b-solid { background: var(--floq-grass); color: #fff; }
+  .b-outline { background: #fff; border: 1px solid var(--floq-cloud); color: var(--floq-pine); }
+  .pill-count { background: var(--floq-pine); color:#fff; padding: 2px 8px; border-radius:9999px; font-family: var(--font-mono); font-size: 10px; font-weight: 500; }
+</style>
+</head><body>
+  <div>
+    <div class="group-label">Estado del animal</div>
+    <div class="row">
+      <span class="badge b-sano"><span class="dot" style="background:#27673F"></span>Sano</span>
+      <span class="badge b-aviso"><span class="dot" style="background:#D97706"></span>Aviso</span>
+      <span class="badge b-critico"><span class="dot" style="background:#C43C3C"></span>Crítico</span>
+      <span class="badge b-celo"><span class="dot" style="background:#1E6FA8"></span>En celo</span>
+      <span class="badge b-inactivo"><span class="dot" style="background:#8A9E93"></span>Inactivo 12h</span>
+    </div>
+  </div>
+  <div>
+    <div class="group-label">Otros</div>
+    <div class="row">
+      <span class="badge b-solid">GPS fijo</span>
+      <span class="badge b-outline">Potrero norte</span>
+      <span class="badge b-outline">Collar #214</span>
+      <span class="pill-count">42</span>
+      <span class="badge b-outline" style="font-family:var(--font-mono); letter-spacing:0.05em">BAT 87%</span>
+    </div>
+  </div>
+</body></html>

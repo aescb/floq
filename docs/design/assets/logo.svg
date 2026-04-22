@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 86" fill="none">
+  <polygon points="79,43 61,74.2 25,74.2 7,43 25,11.8 61,11.8" stroke="#111111" stroke-width="1.5" fill="none" stroke-linejoin="round"></polygon>
+  <polygon points="70,43 56.5,66.4 29.5,66.4 16,43 29.5,19.6 56.5,19.6" stroke="#111111" stroke-width="4.5" fill="none" stroke-linejoin="round"></polygon>
+  <text x="95" y="72" font-family="&#39;Roboto Flex&#39;, sans-serif" font-weight="800" font-size="78" fill="#111111" letter-spacing="-1" style="font-variation-settings: &#39;wdth&#39; 75, &#39;opsz&#39; 144;">Floq</text>
+  <circle cx="270" cy="65" r="9" fill="#27673F"></circle>
+</svg>

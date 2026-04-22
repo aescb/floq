@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 20px; background: var(--floq-chalk); font-family: var(--font-body); }
+  .group-label { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--floq-slate); margin-bottom: 10px; }
+  .grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+  .card { background: #fff; border: 1px solid var(--floq-cloud); border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 8px; }
+  .dot { width: 18px; height: 18px; border-radius: 50%; }
+  .name { font-size: 13px; font-weight: 600; font-family: var(--font-display); color: var(--floq-ink); }
+  .es { font-size: 11px; color: var(--floq-slate); }
+  .val { font-size: 10px; font-family: var(--font-mono); color: var(--floq-fog); }
+</style>
+</head><body>
+<div class="group-label">Colores de estado — Semántica del rebaño</div>
+<div class="grid">
+  <div class="card"><div class="dot" style="background:#27673F"></div><div class="name">Sano</div><div class="es">healthy</div><div class="val">#27673F</div></div>
+  <div class="card"><div class="dot" style="background:#D97706"></div><div class="name">Aviso</div><div class="es">warning</div><div class="val">#D97706</div></div>
+  <div class="card"><div class="dot" style="background:#C43C3C"></div><div class="name">Crítico</div><div class="es">critical</div><div class="val">#C43C3C</div></div>
+  <div class="card"><div class="dot" style="background:#8A9E93"></div><div class="name">Inactivo</div><div class="es">inactive</div><div class="val">#8A9E93</div></div>
+  <div class="card"><div class="dot" style="background:#1E6FA8"></div><div class="name">Celo/Info</div><div class="es">info</div><div class="val">#1E6FA8</div></div>
+</div>
+</body></html>

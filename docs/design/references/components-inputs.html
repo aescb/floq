@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 24px; background: var(--floq-chalk); font-family: var(--font-body); display:flex; flex-direction: column; gap: 14px; }
+  .group-label { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--floq-slate); margin-bottom: 6px; }
+  .field { display: flex; flex-direction: column; gap: 5px; max-width: 320px; }
+  label { font-family: var(--font-body); font-size: 12px; font-weight: 600; color: var(--floq-pine); letter-spacing: 0.02em; }
+  .input { font-family: var(--font-body); font-size: 14px; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--floq-cloud); background: #fff; color: var(--floq-ink); outline: none; transition: all 120ms var(--ease-out); }
+  .input::placeholder { color: var(--floq-fog); }
+  .input:focus { border-color: var(--floq-grass); box-shadow: 0 0 0 3px rgba(39,103,63,0.22); }
+  .input.err { border-color: #C43C3C; }
+  .hint { font-size: 11px; color: var(--floq-slate); }
+  .hint.err { color: #C43C3C; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .chk { display: flex; align-items: center; gap: 8px; }
+  .chk .box { width: 18px; height: 18px; border-radius: 4px; background: var(--floq-grass); display:flex; align-items:center; justify-content:center; }
+  .chk .box.empty { background: #fff; border: 1.5px solid var(--floq-cloud); }
+  .chk svg { width: 12px; height: 12px; stroke: #fff; stroke-width: 3; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+  .chk span { font-size: 13px; color: var(--floq-ink); }
+  .toggle { width: 36px; height: 20px; border-radius: 999px; background: var(--floq-grass); position: relative; }
+  .toggle::after { content: ''; position: absolute; width: 16px; height: 16px; background: #fff; border-radius: 999px; top: 2px; right: 2px; }
+  .toggle.off { background: var(--floq-cloud); }
+  .toggle.off::after { left: 2px; right: auto; }
+</style>
+</head><body>
+<div class="group-label">Inputs</div>
+<div class="grid">
+  <div class="field">
+    <label>Nombre del potrero</label>
+    <input class="input" placeholder="Potrero norte" value="Potrero norte">
+    <span class="hint">Visible en el mapa</span>
+  </div>
+  <div class="field">
+    <label>Número de animales</label>
+    <input class="input err" value="abc">
+    <span class="hint err">Debe ser un número entero</span>
+  </div>
+</div>
+<div class="group-label" style="margin-top:8px">Controles</div>
+<div style="display:flex; gap:22px; align-items:center;">
+  <div class="chk"><span class="box"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span>Avisar si sale del perímetro</span></div>
+  <div class="chk"><span class="box empty"></span><span>Incluir crías</span></div>
+  <div style="display:flex; align-items:center; gap:8px;"><div class="toggle"></div><span style="font-size:13px">Alertas push</span></div>
+  <div style="display:flex; align-items:center; gap:8px;"><div class="toggle off"></div><span style="font-size:13px">Modo silencioso</span></div>
+</div>
+</body></html>

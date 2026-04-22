@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 20px; background: var(--floq-chalk); font-family: var(--font-body); }
+  .group-label { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--floq-slate); margin-bottom: 12px; }
+  .row { display: flex; gap: 14px; align-items: flex-end; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .shape { width: 68px; height: 52px; background: var(--floq-mist); border: 1.5px solid var(--floq-grass); }
+  .token { font-family: var(--font-mono); font-size: 10px; color: var(--floq-slate); }
+  .px { font-family: var(--font-mono); font-size: 9px; color: var(--floq-fog); }
+</style>
+</head><body>
+<div class="group-label">Radii · esquinas</div>
+<div class="row">
+  <div class="item"><div class="shape" style="border-radius:0"></div><span class="token">none</span><span class="px">0</span></div>
+  <div class="item"><div class="shape" style="border-radius:4px"></div><span class="token">sm</span><span class="px">4</span></div>
+  <div class="item"><div class="shape" style="border-radius:8px"></div><span class="token">md</span><span class="px">8 · cards sm</span></div>
+  <div class="item"><div class="shape" style="border-radius:12px"></div><span class="token">lg</span><span class="px">12 · cards</span></div>
+  <div class="item"><div class="shape" style="border-radius:16px"></div><span class="token">xl</span><span class="px">16</span></div>
+  <div class="item"><div class="shape" style="border-radius:24px"></div><span class="token">2xl</span><span class="px">24 · modales</span></div>
+  <div class="item"><div class="shape" style="width:52px; border-radius:9999px"></div><span class="token">full</span><span class="px">pills · badges</span></div>
+</div>
+</body></html>

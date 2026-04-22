@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 20px; background: var(--floq-chalk); font-family: var(--font-body); display:grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .card { background: #fff; border: 1px solid var(--floq-cloud); border-radius: 12px; padding: 16px; box-shadow: 0 2px 6px rgba(15,35,24,0.06); }
+  .card h4 { margin: 0 0 4px 0; font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--floq-pine); letter-spacing: -0.01em; }
+  .card p { margin: 0; font-size: 12.5px; color: var(--floq-slate); line-height: 1.55; }
+  .meta { display:flex; gap: 10px; margin-top: 10px; font-family: var(--font-mono); font-size: 10px; color: var(--floq-fog); text-transform: uppercase; letter-spacing: 0.08em; }
+  .hex { width: 32px; height: 32px; display:inline-flex; }
+  .row { display:flex; align-items:center; gap:10px; margin-bottom: 8px; }
+  .stat { font-family: var(--font-mono); font-size: 22px; color: var(--floq-grass); font-weight: 500; }
+  .card.dark { background: var(--floq-pine); border-color: transparent; color: #fff; }
+  .card.dark h4 { color: #fff; }
+  .card.dark p { color: #B2D9C2; }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--floq-grass); }
+  .dot.amber { background: var(--floq-amber); }
+</style>
+</head><body>
+<div class="card">
+  <div class="row">
+    <svg class="hex" viewBox="0 0 80 80" fill="none"><polygon points="76,40 58,71.2 22,71.2 4,40 22,8.8 58,8.8" stroke="#27673F" stroke-width="3" fill="none"/><polygon points="66,40 53,62.5 27,62.5 14,40 27,17.5 53,17.5" stroke="#27673F" stroke-width="6" fill="none"/></svg>
+    <h4>Potrero norte</h4>
+  </div>
+  <p>42 animales pastando en 8,4 ha. Rotación programada en 2 días.</p>
+  <div class="meta"><span><span class="dot"></span> Activo</span><span>8,4 ha</span><span>42 animales</span></div>
+</div>
+<div class="card">
+  <h4>Vaca 214</h4>
+  <p>Sana · última ubicación hace 4 min</p>
+  <div class="stat" style="margin-top: 8px">38,9°C <span style="font-size: 11px; color: var(--floq-slate)">temperatura</span></div>
+  <div class="meta"><span><span class="dot"></span> Sana</span><span>BAT 87%</span><span>GPS fijo</span></div>
+</div>
+<div class="card dark">
+  <div class="row">
+    <svg class="hex" viewBox="0 0 80 80" fill="none"><polygon points="76,40 58,71.2 22,71.2 4,40 22,8.8 58,8.8" stroke="#F5B942" stroke-width="3" fill="none"/><polygon points="66,40 53,62.5 27,62.5 14,40 27,17.5 53,17.5" stroke="#F5B942" stroke-width="6" fill="none"/></svg>
+    <h4 style="color:#F5B942">Alerta de perímetro</h4>
+  </div>
+  <p>Vaca 077 salió del potrero Esquinas hace 12 minutos.</p>
+  <div class="meta" style="color:#72BB91"><span><span class="dot amber"></span> Aviso</span><span>−33,7614°</span><span>−70,5824°</span></div>
+</div>
+<div class="card" style="background: var(--floq-mist); border-color: var(--floq-meadow)">
+  <h4>Rotación lista</h4>
+  <p>Mueve el rebaño al potrero sur con un toque. Los collares guían al ganado con audio suave.</p>
+  <button style="margin-top: 10px; border: none; background: var(--floq-grass); color: #fff; font-family: var(--font-body); font-weight: 600; font-size: 13px; padding: 8px 16px; border-radius: 8px; cursor: pointer;">Iniciar rotación</button>
+</div>
+</body></html>

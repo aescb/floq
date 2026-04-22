@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin:0; padding:20px; background: var(--floq-chalk); font-family: var(--font-body); display:grid; grid-template-columns: 1fr 1fr 1fr; gap:14px; align-items:center; }
+  .tile { display:flex; align-items:center; justify-content:center; height: 150px; border-radius: 12px; border: 1px solid var(--floq-cloud); }
+  .tile.dark { background: var(--floq-pine); border-color: transparent; }
+  .tile.grass { background: var(--floq-grass); border-color: transparent; border-radius: 22px; }
+  .mark { width: 80px; height: 80px; }
+  .mark-lg { width: 100px; height: 100px; }
+  .caption { text-align:center; font-family: var(--font-mono); font-size: 10px; color: var(--floq-slate); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 6px; }
+</style>
+</head><body>
+  <div>
+    <div class="tile"><img class="mark" src="../assets/logomark.svg" alt="mark"></div>
+    <div class="caption">mark · claro</div>
+  </div>
+  <div>
+    <div class="tile dark"><svg class="mark" viewBox="0 0 80 80" fill="none"><polygon points="76,40 58,71.2 22,71.2 4,40 22,8.8 58,8.8" stroke="#ffffff" stroke-width="2" fill="none" stroke-linejoin="round"/><polygon points="66,40 53,62.5 27,62.5 14,40 27,17.5 53,17.5" stroke="#ffffff" stroke-width="5" fill="none" stroke-linejoin="round"/></svg></div>
+    <div class="caption">mark · oscuro</div>
+  </div>
+  <div>
+    <div class="tile grass"><svg class="mark-lg" viewBox="0 0 80 80" fill="none"><polygon points="76,40 58,71.2 22,71.2 4,40 22,8.8 58,8.8" stroke="#ffffff" stroke-width="2" fill="none" stroke-linejoin="round"/><polygon points="66,40 53,62.5 27,62.5 14,40 27,17.5 53,17.5" stroke="#ffffff" stroke-width="5" fill="none" stroke-linejoin="round"/></svg></div>
+    <div class="caption">app icon</div>
+  </div>
+</body></html>

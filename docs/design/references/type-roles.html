@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 22px 20px; background: var(--floq-chalk); font-family: var(--font-body); display: flex; flex-direction: column; gap: 14px; }
+  .item { display: grid; grid-template-columns: 110px 1fr; gap: 16px; align-items: flex-start; }
+  .role { font-family: var(--font-mono); font-size: 10px; color: var(--floq-fog); text-transform: uppercase; letter-spacing: 0.1em; padding-top: 8px; }
+
+  .display {
+    font-family: var(--font-display); font-weight: 800; font-size: 42px;
+    letter-spacing: -0.015em; color: var(--floq-leaf); line-height: 0.92;
+    font-variation-settings: 'wdth' 75, 'opsz' 144;
+  }
+  .heading {
+    font-family: var(--font-display); font-weight: 700; font-size: 26px;
+    color: var(--floq-ink); letter-spacing: -0.01em; line-height: 1;
+    font-variation-settings: 'wdth' 85, 'opsz' 32;
+  }
+  .label {
+    font-family: var(--font-display); font-weight: 600; font-size: 12px;
+    letter-spacing: 0.08em; text-transform: uppercase; color: var(--floq-grass);
+    font-variation-settings: 'wdth' 100, 'opsz' 14;
+  }
+  .body { font-family: var(--font-body); font-weight: 400; font-size: 14px; color: var(--floq-ink); line-height: 1.55; }
+  .caption { font-family: var(--font-body); font-weight: 300; font-size: 12px; color: var(--floq-slate); }
+  .data { font-family: var(--font-mono); font-weight: 500; font-size: 14px; color: var(--floq-pine); }
+</style>
+</head><body>
+<div class="item"><span class="role">Display</span><span class="display">Tu rebaño,<br/>donde lo necesitas.</span></div>
+<div class="item"><span class="role">Heading</span><span class="heading">Potrero norte · 42 animales</span></div>
+<div class="item"><span class="role">Label</span><span class="label">Activo · última hora</span></div>
+<div class="item"><span class="role">Body</span><span class="body">Dibuja el perímetro en el mapa y los collares guiarán al rebaño con audio y vibración suave.</span></div>
+<div class="item"><span class="role">Caption</span><span class="caption">Actualizado hace 2 minutos · ±3m de precisión</span></div>
+<div class="item"><span class="role">Data</span><span class="data">−33.7614° · −70.5824° · bat 87%</span></div>
+</body></html>

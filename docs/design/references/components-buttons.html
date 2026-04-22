@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 24px; background: var(--floq-chalk); font-family: var(--font-body); display:flex; flex-direction:column; gap:18px; }
+  .group-label { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--floq-slate); margin-bottom: 8px; }
+  .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; border: none; cursor: pointer; font-family: var(--font-body); font-weight: 600; border-radius: 8px; transition: all 120ms var(--ease-out); font-size: 14px; padding: 10px 18px; }
+  .btn:active { transform: scale(0.97); }
+  .primary { background: var(--floq-grass); color: #fff; box-shadow: 0 1px 3px rgba(15,35,24,0.18); }
+  .primary:hover { background: #1E5430; }
+  .secondary { background: var(--floq-mist); color: var(--floq-grass); border: 1px solid var(--floq-meadow); }
+  .secondary:hover { background: var(--floq-meadow); }
+  .ghost { background: transparent; color: var(--floq-pine); border: 1px solid var(--floq-cloud); }
+  .ghost:hover { background: var(--floq-mist); }
+  .amber { background: var(--floq-amber); color: #fff; }
+  .amber:hover { background: #B65F05; }
+  .danger { background: #C43C3C; color: #fff; }
+  .sm { padding: 6px 12px; font-size: 12px; border-radius: 6px; }
+  .lg { padding: 13px 24px; font-size: 15px; }
+  .disabled { opacity: 0.4; cursor: not-allowed; }
+  svg { width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+</style>
+</head><body>
+  <div>
+    <div class="group-label">Variantes</div>
+    <div class="row">
+      <button class="btn primary">Dibujar cerca</button>
+      <button class="btn secondary">Ver rebaño</button>
+      <button class="btn ghost">Cancelar</button>
+      <button class="btn amber">
+        <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        Alerta (2)
+      </button>
+      <button class="btn danger">Quitar collar</button>
+    </div>
+  </div>
+  <div>
+    <div class="group-label">Tamaños · estados</div>
+    <div class="row">
+      <button class="btn primary sm">Small</button>
+      <button class="btn primary">Default</button>
+      <button class="btn primary lg">Activar cerca</button>
+      <button class="btn primary disabled" disabled>Desactivado</button>
+      <button class="btn primary" style="box-shadow:0 0 0 3px rgba(39,103,63,0.28)">Focus</button>
+    </div>
+  </div>
+</body></html>

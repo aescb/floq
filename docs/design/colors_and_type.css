@@ -1,0 +1,245 @@
+/*
+ * FLOQ DESIGN SYSTEM — Colors & Typography
+ * AI-powered virtual fencing and health monitoring for livestock
+ * ============================================================
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,25..151,300..1000&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ─── COLOR TOKENS ──────────────────────────────────────────── */
+:root {
+
+  /* — Greens: The Land — */
+  --floq-leaf:     #0F2318;   /* deepest, near-black */
+  --floq-pine:     #1A3D29;   /* dark text on light bg */
+  --floq-grass:    #27673F;   /* brand primary — CTAs */
+  --floq-moss:     #3E8E5E;   /* medium green */
+  --floq-sprout:   #72BB91;   /* light accent */
+  --floq-meadow:   #B2D9C2;   /* very light */
+  --floq-mist:     #E6F2EC;   /* bg tint */
+
+  /* — Ambers: Sun, Health, Alerts — */
+  --floq-ember:    #9E4E00;   /* dark amber */
+  --floq-amber:    #D97706;   /* warnings, CTAs secondary */
+  --floq-honey:    #F5B942;   /* soft glow */
+  --floq-cream:    #FEF3DC;   /* light amber bg */
+
+  /* — Neutrals — */
+  --floq-dark:     #0D1612;   /* near black */
+  --floq-ink:      #1C2B21;   /* primary body text */
+  --floq-slate:    #4A5E53;   /* secondary text */
+  --floq-fog:      #8A9E93;   /* placeholder / disabled */
+  --floq-cloud:    #D4E2DA;   /* borders, dividers */
+  --floq-paper:    #F3F7F5;   /* card bg */
+  --floq-chalk:    #F9FBFA;   /* page bg */
+  --floq-white:    #FFFFFF;
+
+  /* — Status Colors — */
+  --floq-status-healthy:  #27673F;
+  --floq-status-warning:  #D97706;
+  --floq-status-critical: #C43C3C;
+  --floq-status-inactive: #8A9E93;
+  --floq-status-info:     #1E6FA8;
+
+  /* ─── SEMANTIC ALIASES ─────────────────────────────────────── */
+  --color-bg:           var(--floq-chalk);
+  --color-bg-card:      var(--floq-paper);
+  --color-bg-sunken:    var(--floq-mist);
+  --color-border:       var(--floq-cloud);
+  --color-border-focus: var(--floq-grass);
+
+  --color-text-primary:   var(--floq-ink);
+  --color-text-secondary: var(--floq-slate);
+  --color-text-muted:     var(--floq-fog);
+  --color-text-inverse:   var(--floq-chalk);
+
+  --color-brand:          var(--floq-grass);
+  --color-brand-dark:     var(--floq-pine);
+  --color-brand-light:    var(--floq-mist);
+  --color-accent:         var(--floq-amber);
+  --color-accent-light:   var(--floq-cream);
+}
+
+/* ─── TYPOGRAPHY TOKENS ─────────────────────────────────────── */
+:root {
+  --font-display:  'Roboto Flex', 'Inter', sans-serif;
+  --font-body:     'DM Sans', sans-serif;
+  --font-mono:     'JetBrains Mono', monospace;
+
+  /* Scale (Major Third: 1.25) */
+  --text-xs:    0.64rem;    /* 10.2px */
+  --text-sm:    0.8rem;     /* 12.8px */
+  --text-base:  1rem;       /* 16px */
+  --text-md:    1.25rem;    /* 20px */
+  --text-lg:    1.563rem;   /* 25px */
+  --text-xl:    1.953rem;   /* 31.2px */
+  --text-2xl:   2.441rem;   /* 39px */
+  --text-3xl:   3.052rem;   /* 48.8px */
+  --text-4xl:   3.815rem;   /* 61px */
+  --text-5xl:   4.768rem;   /* 76px */
+
+  /* Line Heights */
+  --leading-tight:  1.15;
+  --leading-snug:   1.3;
+  --leading-base:   1.5;
+  --leading-relaxed: 1.7;
+
+  /* Letter Spacing */
+  --tracking-tight:  -0.005em;
+  --tracking-snug:    0em;
+  --tracking-normal:  0.01em;
+  --tracking-wide:    0.05em;
+  --tracking-wider:   0.1em;
+
+  /* Vertical stretch — echoes the tall, elongated feel of the Floq wordmark */
+  --stretch-display: 1.08;
+  --stretch-heading: 1.04;
+
+  /* Horizontal condense — squashes display type for the tall-narrow wordmark feel */
+  --squash-display: 0.85;
+  --squash-heading: 0.92;
+
+  /* Weights */
+  --weight-light:   300;
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semibold: 600;
+  --weight-bold:    700;
+  --weight-extrabold: 800;
+}
+
+/* ─── SEMANTIC TYPE ROLES ───────────────────────────────────── */
+:root {
+  /* Display — hero headlines, brand moments. Tall & narrow, like the logo. */
+  --role-display-font:    var(--font-display);
+  --role-display-weight:  var(--weight-extrabold);
+  --role-display-tracking: 0em;
+  --role-display-leading: 0.92;
+  --role-display-stretch: var(--stretch-display);
+
+  /* Heading — page & section titles */
+  --role-heading-font:    var(--font-display);
+  --role-heading-weight:  var(--weight-bold);
+  --role-heading-tracking: 0em;
+  --role-heading-leading: 1.05;
+  --role-heading-stretch: var(--stretch-heading);
+
+  /* Label — UI labels, nav, badges */
+  --role-label-font:    var(--font-body);
+  --role-label-weight:  var(--weight-semibold);
+  --role-label-tracking: var(--tracking-wide);
+  --role-label-leading: var(--leading-base);
+
+  /* Body — paragraphs, descriptions */
+  --role-body-font:    var(--font-body);
+  --role-body-weight:  var(--weight-regular);
+  --role-body-tracking: var(--tracking-normal);
+  --role-body-leading: var(--leading-relaxed);
+
+  /* Caption — metadata, timestamps */
+  --role-caption-font:    var(--font-body);
+  --role-caption-weight:  var(--weight-light);
+  --role-caption-tracking: var(--tracking-normal);
+  --role-caption-leading: var(--leading-base);
+
+  /* Data — numbers, stats, sensor readings */
+  --role-data-font:    var(--font-mono);
+  --role-data-weight:  var(--weight-medium);
+  --role-data-tracking: var(--tracking-normal);
+  --role-data-leading: var(--leading-base);
+}
+
+/* ─── SPACING TOKENS ────────────────────────────────────────── */
+:root {
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-5:   20px;
+  --space-6:   24px;
+  --space-8:   32px;
+  --space-10:  40px;
+  --space-12:  48px;
+  --space-16:  64px;
+  --space-20:  80px;
+  --space-24:  96px;
+}
+
+/* ─── RADIUS TOKENS ─────────────────────────────────────────── */
+:root {
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-2xl:  24px;
+  --radius-full: 9999px;
+}
+
+/* ─── SHADOW TOKENS ─────────────────────────────────────────── */
+:root {
+  --shadow-xs: 0 1px 2px rgba(15, 35, 24, 0.06);
+  --shadow-sm: 0 2px 6px rgba(15, 35, 24, 0.08), 0 1px 2px rgba(15, 35, 24, 0.04);
+  --shadow-md: 0 4px 16px rgba(15, 35, 24, 0.10), 0 2px 4px rgba(15, 35, 24, 0.06);
+  --shadow-lg: 0 8px 32px rgba(15, 35, 24, 0.12), 0 4px 8px rgba(15, 35, 24, 0.08);
+  --shadow-xl: 0 16px 48px rgba(15, 35, 24, 0.16), 0 8px 16px rgba(15, 35, 24, 0.08);
+  --shadow-focus: 0 0 0 3px rgba(39, 103, 63, 0.28);
+}
+
+/* ─── ANIMATION TOKENS ──────────────────────────────────────── */
+:root {
+  --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:   cubic-bezier(0.45, 0, 0.55, 1);
+  --ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast: 120ms;
+  --duration-base: 220ms;
+  --duration-slow: 380ms;
+}
+
+/* ─── BASE ELEMENT STYLES ───────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-primary);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 800;
+  letter-spacing: 0.005em;
+  line-height: 0.92;
+}
+h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  letter-spacing: 0.005em;
+  line-height: 0.98;
+}
+h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  letter-spacing: 0.005em;
+}
+h4 {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-semibold);
+}
+p {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-primary);
+}
+code, pre {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+}
